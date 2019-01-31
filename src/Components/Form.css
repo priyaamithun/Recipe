@@ -1,0 +1,43 @@
+.form-wrapper{
+display: flex;
+justify-content: center;
+align-items: center;
+background-color:rgba(53, 54, 44, 0.5);
+width:100%;
+height:40px;
+
+}
+.form-wrapper > input{
+    width:150px;
+    height:30px;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px){ 
+    .form-wrapper > input{
+        width:150px;
+        height:30px;
+        font-size: 3rem;
+    }
+} 
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px){ 
+    .form-wrapper .btn{
+        font-size: 2.1rem;
+    }
+    .form-wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:rgba(53, 54, 44, 0.5);
+        width:100%;
+        height:60px;
+        
+        }
+        .form-wrapper > input{
+            width:170px;
+            height:60px;
+        }
+}

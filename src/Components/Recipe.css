@@ -1,0 +1,38 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+
+.recipe-content h2{
+    margin-top:50px;
+    text-align: center;
+
+}
+.recipe-content ul {
+    margin-left:75px;
+}
+
+
+.recipe-content img{
+    border:5px solid goldenrod;
+    padding: 10px;
+    border-spacing: 5px;
+    margin:50px 350px;
+    width:400px;
+    height:400px;
+}
+.recipe-content p{
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+}
+.link{
+    color:white;
+    
+}
+.home-btn{
+margin-left:500px;
+}

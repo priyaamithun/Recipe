@@ -1,0 +1,17 @@
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+
+    html,
+    body{
+      width:100%;
+      overflow-x:hidden;
+    }
+
+
+.form-content{
+    background-color:rgba(39, 35, 39, 0.5);
+   
+}
+
