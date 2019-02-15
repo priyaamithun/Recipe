@@ -8,7 +8,9 @@ class Header extends React.Component {
     return (
       <div className="Header">
       <Nav/>
-      <div className="logo"></div>
+      <div className="logo">
+      <img src={require("./Images/logo.png")} alt=""/>
+      </div>
 
             <br/>
             <h5>Look! Cook! Enjoy!</h5>

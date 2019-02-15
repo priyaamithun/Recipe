@@ -1,52 +1,60 @@
-.logoAboutUs{
-    background-color: black;
-    background-image: url(./Images/img-5.png);
-    height: 142px;
-width: 145px;
-background-position: bottom;
- margin-left:38rem;
-margin-top:5rem;
+.logoAboutUs img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    margin-top:10px;
+    height:5%;
 }
 .Aboutus-content{
     margin-top:100px;
 }
 .Aboutus-content h1{
-
+color:white;
     text-align: center;
 }
 .Aboutus-content hr{
-    width:50%;
+    
+        width:50%;
+        background-color: white;
 }
 .Aboutus-content p{
+    color: white;
     margin-top:55px;
     text-align: center;
     font-style: italic;
 }
 @media only screen and (min-width: 320px) and (max-width: 479px){ 
-    .logoAboutUs{
-        background-color: black;
-        background-image: url(./Images/img-5.png);
-        height: 149px;
-    width: 150px;
-    background-position: bottom;
-     margin-left:6rem;
-    margin-top:1rem;
+    .logoAboutUs img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 30%;
+        margin-top:10px;
     }
+    .Aboutus-content h1{
+        color:white;
+        font-size:2rem;
+            text-align: center;
+        }
     .Aboutus-content{
         margin-top:60px;
     }
     .Aboutus-content p{
-        margin-top:55px;
+        margin-top:30px;
         text-align: center;
         font-style: italic;
-        font-size:3rem;
+        font-size:1.3rem;
     }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px){ 
-    .logoAboutUs{
-     margin-left:18rem;
-    margin-top:5rem;
+    .logoAboutUs img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 30%;
+        margin-top:10px;
     }
     .Aboutus-content{
         margin-top:100px;
@@ -66,24 +74,56 @@ margin-top:5rem;
   
 }
 @media only screen and (min-width: 768px) and (max-width: 991px){ 
-    .logoAboutUs{
-        margin-left:19rem;
-       margin-top:5rem;
+    .logoAboutUs img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 30%;
+        margin-top:10px;
+       
        }
        .Aboutus-content{
            margin-top:100px;
        }
        .Aboutus-content h1{
-       font-size:4rem;
+       font-size:3rem;
            text-align: center;
        }
        .Aboutus-content hr{
            width:50%;
        }
        .Aboutus-content p{
-           font-size:4rem;
+           font-size:2.5rem;
            margin-top:55px;
            text-align: center;
            font-style: italic;
        }
+}
+@media only screen and (min-width: 992px) and (max-width: 1024px){ 
+    .logoAboutUs img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 30%;
+        margin-top:25px;
+        height: 5%;
+       
+       }
+       .Aboutus-content{
+           margin-top:100px;
+       }
+       .Aboutus-content h1{
+       font-size:3rem;
+           text-align: center;
+       }
+       .Aboutus-content hr{
+           width:50%;
+       }
+       .Aboutus-content p{
+           font-size:2.5rem;
+           margin-top:55px;
+           text-align: center;
+           font-style: italic;
+       }
+
 }

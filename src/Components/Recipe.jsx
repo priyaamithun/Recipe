@@ -13,7 +13,7 @@ class Recipe extends React.Component {
     const title = this.props.location.state.recipe;
     const req = await fetch(
       `https://api.edamam.com/search?q=${title}&app_id=${APIID}&app_key=${API_KEY}
-      `,HttpMethod.GET
+      `
     );
     const res = await req.json();
     console.log(res);
@@ -25,9 +25,16 @@ class Recipe extends React.Component {
   };
   render() {
     const recipe = this.state.activeRecipe;
-    const list = recipe.ingredientLines;
+    // const list = recipe.ingredientLines;
+    console.log(recipe);
+    console.log(recipe);
 
-    console.log(list); 
+const listArray = [];
+listArray.push(recipe);
+const lists = listArray.map((m,i)=> 
+  <li key ={i}>{m.ingredientLines}</li>
+// )
+)
     return (
       <div className="container">
        {this.state.activeRecipe.length !== 0 && 
@@ -36,8 +43,8 @@ class Recipe extends React.Component {
         <img src={recipe.image} alt="" />
         <p>Source:{recipe.source}</p>
 
-     <ul>
-      <li>{list}</li>
+     <ul>{lists}
+      
      </ul>
      <button className=" btn btn-warning home-btn">
      <Link className ="link" to="/">Go Home</Link>

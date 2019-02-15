@@ -36,3 +36,15 @@
 .home-btn{
 margin-left:500px;
 }
+@media only screen and (min-width: 320px) and (max-width: 479px){ 
+
+
+
+    .container{
+    
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        
+    }
+}

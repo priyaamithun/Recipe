@@ -11,8 +11,8 @@ const Contactus = () =>(
     <input type="email" className="form-control"/>
   </div>
   <div className="form-group">
-    <label >Full Name:</label>
-    <input type="text" className="form-control" />
+    <label>Full Name:</label>
+    <input type="email" className="form-control"/>
   </div>
   <br/>
   <textarea  className="textarea" rows="4" cols="75" defaultValue="Your Message....." />

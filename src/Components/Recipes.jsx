@@ -20,16 +20,16 @@ const Recipes = props => (
                   : `${val.recipe.label.substring(0, 25)}...`}
               </h5>
               <h6 className="card-subtitle mb-2 text-muted">
-                {val.recipe.source}
+               Source : {val.recipe.source}
               </h6>
-              <button className="btn btn-secondary">
+              <button className="btn btn-warning">
                 <Link className="link"
                   to={{
                     pathname: `/recipe/${val.recipe.label}`,
                     state: { recipe:val.recipe.label }
                   }}
                 >
-                  Full Preparation
+                  Full Recipe
                 </Link>
               </button>
             </div>

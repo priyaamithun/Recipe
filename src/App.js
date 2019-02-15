@@ -2,11 +2,9 @@ import React from "react";
 import "./App.css";
 import Header from "./Components/Header";
 import Recipes from './Components/Recipes';
-import HttpMethod from './Components/HttpMethod';
 import HttpHeader from './Components/HttpHeader';
 import Form from './Components/Form';
 import Footer from './Components/Footer';
-import Nav from './Components/Nav';
 import Contactus from "./Components/Contactus";
 import Aboutus from "./Components/Aboutus";
 
@@ -34,8 +32,7 @@ let options = new HttpHeader();
     e.preventDefault();
     const recipeName = e.target.elements.recipeName.value;
     const api_call = await fetch(
-      `https://api.edamam.com/search?q=${recipeName}&app_id=${APIID}&app_key=${API_KEY}
-      &from=0&to=8`,HttpMethod.GET
+      `https://api.edamam.com/search?q=${recipeName}&app_id=${APIID}&app_key=${API_KEY}&from=0&to=8`
     );
     
     console.log("Working!!!");
@@ -60,7 +57,9 @@ componentDidUpdate =() =>{
     return (
       <div className="app" id="home">
         <Header />
+        <div className="form-container">
         <Form getRecipe={this.getRecipe} />
+      </div>  
   <Recipes recipes={this.state.recipes} />
   
   <Aboutus />

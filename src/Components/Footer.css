@@ -1,6 +1,6 @@
 .footer{
     margin-top:100px;
-    background-color:rgba(53, 54, 44, 0.5);
+    background-color:rgba(180, 182, 169, 0.5);
 height:50px;
 }
 .footer-copyright {
@@ -17,7 +17,7 @@ height:50px;
 @media only screen and (min-width: 320px) and (max-width: 479px){ 
     .footer{
         margin-top:100px;
-        background-color:rgba(53, 54, 44, 0.5);
+        background-color:rgba(172, 173, 162, 0.5);
     height:50px;
     }
     .footer-copyright {
