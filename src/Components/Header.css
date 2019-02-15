@@ -10,10 +10,12 @@
 
 }
 .logo img{
-    width: 150px;
-    height:150px;
- margin-left:38rem;
-margin-top:5rem;
+    display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 10%;
+        margin-top:69px;
+        height: 5%;
 
 }
 .Header h5{

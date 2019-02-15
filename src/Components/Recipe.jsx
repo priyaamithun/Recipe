@@ -36,7 +36,7 @@ const lists = listArray.map((m,i)=>
 // )
 )
     return (
-      <div className="container">
+      <div className="container recipeContainer">
        {this.state.activeRecipe.length !== 0 && 
        <div className="recipe-content">
        <h2 >{recipe.label}</h2>
