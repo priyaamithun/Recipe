@@ -3,6 +3,8 @@ import "./Recipes.css";
 import { Link } from "react-router-dom";
 
 const Recipes = props => (
+  
+
   <div className="container">
     <div className="row">
       { props.recipes && props.recipes.map((val,i)=> {
@@ -15,14 +17,17 @@ const Recipes = props => (
               />
 
               <h5 className="card-title">
-                {val.recipe.label.length < 20
+                {val.recipe.label.length < 10
                   ? `${val.recipe.label}`
-                  : `${val.recipe.label.substring(0, 25)}...`}
+                  : `${val.recipe.label.substring(0, 15)}...`}
               </h5>
               <h6 className="card-subtitle mb-2 text-muted">
-               Source : {val.recipe.source}
+              {val.recipe.source < 10
+              ? `${val.recipe.source}`: `${val.recipe.source.substring(0,15)}...`
+              }
+            
               </h6>
-              <button className="btn btn-warning">
+              <button className="btn link-button">
                 <Link className="link"
                   to={{
                     pathname: `/recipe/${val.recipe.label}`,

@@ -7,12 +7,11 @@ class Header extends React.Component {
   render() {
     return (
       <div className="Header">
-      <Nav/>
+            <Nav/>
+
       <div className="logo">
       <img src={require("./Images/logo.png")} alt=""/>
       </div>
-
-            <br/>
             <h5>Look! Cook! Enjoy!</h5>
         </div>
     );

@@ -1,15 +1,28 @@
 import React from "react";
-import HttpMethod from "./HttpMethod";
+import HttpHeader from './HttpHeader';
 import "./Recipe.css";
 import { Link } from "react-router-dom";
+import Footer from './Footer';
+
 
 const API_KEY = "6f5f6854a59d3e4ae90ddbbe12b0e899";
 const APIID = "b85eeae5";
 class Recipe extends React.Component {
+  
   state = {
-    activeRecipe: []
+    activeRecipe: [],
+    lists : []
   };
+
+  async doRequest(url,
+    content, 
+    contentType= this.defaultContentType){
+  let options = new HttpHeader();
+  // options.method = HttpMethod;
+    };
+
   componentDidMount = async () => {
+
     const title = this.props.location.state.recipe;
     const req = await fetch(
       `https://api.edamam.com/search?q=${title}&app_id=${APIID}&app_key=${API_KEY}
@@ -18,39 +31,49 @@ class Recipe extends React.Component {
     const res = await req.json();
     console.log(res);
     this.setState({
-      activeRecipe: res.hits[0].recipe
+      activeRecipe: res.hits[0].recipe,
+      lists : res.hits[0].recipe.ingredients
     });
-    console.log(this.state.activeRecipe);
+    // console.log(this.state.activeRecipe);
 
   };
+
   render() {
     const recipe = this.state.activeRecipe;
-    // const list = recipe.ingredientLines;
-    console.log(recipe);
-    console.log(recipe);
+  
+   const ingredientsList = this.state.lists.map((d, key)=>{
+     return (
+       <li key={key}>{d.text}</li>
+     )
+   })
 
-const listArray = [];
-listArray.push(recipe);
-const lists = listArray.map((m,i)=> 
-  <li key ={i}>{m.ingredientLines}</li>
-// )
-)
+
+
     return (
+      <div className="page">
+    
       <div className="container recipeContainer">
        {this.state.activeRecipe.length !== 0 && 
        <div className="recipe-content">
-       <h2 >{recipe.label}</h2>
+       <h2 className="recipe-title">{recipe.label}</h2>
         <img src={recipe.image} alt="" />
-        <p>Source:{recipe.source}</p>
 
-     <ul>{lists}
-      
+        <p className="source">Source:{recipe.source}</p>
+
+     <ul className="ingredientsList">
+     <p className="ingredients">Ingredients</p>
+<br/>
+      {ingredientsList}
      </ul>
      <button className=" btn btn-warning home-btn">
      <Link className ="link" to="/">Go Home</Link>
      </button>
+    
+
       </div>
       }
+      </div>
+      <Footer />
       </div>
     );
   }

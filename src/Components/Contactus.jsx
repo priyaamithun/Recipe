@@ -4,15 +4,15 @@ import './Contactus.css'
 const Contactus = () =>(
 <div className="contact-content" id="contact">
   <h1>Contact Us</h1>
-  <hr/>
+<hr/>
 <form className="form-contentnew">
   <div className="form-group">
-    <label>Email address:</label>
-    <input type="email" className="form-control"/>
+    
+    <input type="email" className="form-control" placeholder="Email address"/>
   </div>
   <div className="form-group">
-    <label>Full Name:</label>
-    <input type="email" className="form-control"/>
+    
+    <input type="email" className="form-control" placeholder="Full name"/>
   </div>
   <br/>
   <textarea  className="textarea" rows="4" cols="75" defaultValue="Your Message....." />

@@ -19,24 +19,29 @@ img {
 .card-title {
   margin: 10px;
   text-align: center;
-  outline: 1px solid coral;
+  outline: 1px solid #A0B550;
 }
 .card-subtitle {
   margin: 10px;
   text-align: center;
   
 }
+.link-button{
+  background-color: #A0B550;
+}
+
 .link {
   color: white;
   text-decoration: none;
   font-style: italic;
+  
 }
 .link:hover {
   text-decoration: none;
   color: white;
 }
 .card-title:hover{
-  background-color: coral;
+  background-color: #333;
   color:white;
 }
 @media only screen and (min-width: 320px) and (max-width: 479px){ 
@@ -87,24 +92,24 @@ img {
     .card-title {
         margin: 10px;
         text-align: center;
-      font-size: 3rem;
+      font-size: 1.5rem;
         outline: 1px solid coral;
       }
       .card-subtitle {
         margin: 10px;
         text-align: center;
-        font-size: 3rem;
+        font-size: 1rem;
       }
       .link {
         color: white;
         text-decoration: none;
         font-style: italic;
-        font-size: 3rem;
+        font-size: 1.5rem;
       }
       img {
-        width: 75%;
+        max-width: 100%;
       
-        height: 190px;
+        height: 280px;
       }
 }
 

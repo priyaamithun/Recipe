@@ -1,6 +1,7 @@
 
 .recipeContainer{
     background-color: white;
+    
 }
 
 
@@ -14,7 +15,8 @@
 
 
 .recipe-content h2{
-    
+    font-family: 'Great Vibes', cursive;
+     font-size:3rem;
     margin-top:50px;
     text-align: center;
 
@@ -28,9 +30,11 @@
     border:5px solid goldenrod;
     padding: 10px;
     border-spacing: 5px;
-    margin:50px 350px;
-    width:400px;
-    height:400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50%;
+    height: auto;
 }
 .recipe-content p{
 
@@ -43,17 +47,26 @@
     
 }
 .home-btn{
-margin-left:500px;
+margin:5rem 0 3rem 7rem;
 }
-@media only screen and (min-width: 320px) and (max-width: 479px){ 
+.source{
+margin:1rem;
+}
 
 
 
-    .container{
+.ingredientsList .ingredients{
+    float: left;
+    margin-left:2.6rem;
     
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        
-    }
+}
+.ingredientsList li{
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    font-style: italic;
+    margin-top:2rem;
+    
+    
 }

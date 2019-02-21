@@ -1,121 +1,42 @@
 
 
-.Header{
+ .Header{
+     margin-top:0;
     background-image: url(./Images/cover.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100% 100%;
     background-position:center ;
-    height:450px;
-  
-
+    height:500px;
 }
+
+
 .logo img{
+    padding: 0;
+    width:200px;
+    height:400px;
     display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 10%;
-        margin-top:69px;
-        height: 5%;
-
+    margin: 0 auto;
+    padding-top:7rem;
+    
 }
+
 .Header h5{
     text-align: center;
     color:white;
     font-style: italic;
 letter-spacing: 2px;
-}
-@media only screen and (min-width: 320px) and (max-width: 479px){ 
-
-   
-.Header{
-    background-image: url(./Images/cover.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position:center ;
-    height:250px;
-  
-
-}
-.logo img{
-
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 30%;
-    margin-top:10px;
-    height: 5%;
-  } 
-
-.Header h5{
-    color:white;
-    font-style: italic;
-letter-spacing: 2px;
-font-size: 1.5rem;
-text-align: center;
-}
+padding-bottom:1rem;
+font-size: .9rem;
 }
 
-@media only screen and (min-width: 480px) and (max-width: 767px){ 
-    .Header{
-        background-image: url(./Images/cover.jpg);
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        background-position:center ;
-        height:350px;
-      
-    
-    }
-    .logo img{
+@media screen and (min-width:800px){
 
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 30%;
-        margin-top:10px;
-        height: 5%;
-      }
-} 
-
-
-
-
-@media only screen and (min-width: 768px) and (max-width: 991px){ 
-
-    .logo img{
-
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 35%;
-        margin-top:15px;
-        height: 5%;
-      }
-    
     .Header h5{
         text-align: center;
-        color:white;
-        font-style: italic;
-    letter-spacing: 2px;
-    font-size: 2.5rem;
+        font-size: 1.4rem;
     }
-}
-@media only screen and (min-width: 992px) and (max-width: 1024px){ 
-    .logo img{
 
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 5%;
-        height:5%;
-        margin-top:15px;
-      }
-    
-    .Header h5{
-        text-align: center;
-        color:white;
-        font-style: italic;
-    letter-spacing: 2px;
-    font-size: 2.5rem;
-    }
+}
+@media screen and (min-width:900px){
 
 }

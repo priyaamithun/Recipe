@@ -1,12 +1,14 @@
-#wrap {
-    margin: 9px 100px;
-    display: inline-block;
+ #wrap {
+    margin: 1em 0em 1em 15em;
+    display: block;
     position: relative;
     height: 60px;
     float: right;
     padding: 10px;
-
+  
   }
+
+  
   input:-webkit-autofill,
   input:-webkit-autofill:hover, 
   input:-webkit-autofill:focus
@@ -34,7 +36,7 @@
   }
   input[type="text"] {
     height: 60px;
-    font-size: 55px;
+    font-size: 2rem;
     display: inline-block;
     font-family: "Lato";
     font-weight: 100;
@@ -58,7 +60,7 @@
   }
   
   input[type="text"]:focus {
-    width: 600px;
+    width: 350px;
     z-index: 1;
     border-bottom: 1px solid #BBB;
     cursor: text;
@@ -85,265 +87,10 @@
     opacity: 0.8;
   }
 
-  @media only screen and (min-width: 320px) and (max-width: 479px){ 
 
-    #wrap{
-        left:90px;
-        padding:1px;
-    }
-/*  */
-  input:-webkit-autofill,
-  input:-webkit-autofill:hover, 
-  input:-webkit-autofill:focus
-  textarea:-webkit-autofill,
-  textarea:-webkit-autofill:hover
-  textarea:-webkit-autofill:focus,
-  select:-webkit-autofill,
-  select:-webkit-autofill:hover,
-  select:-webkit-autofill:focus {
-    border: 1px solid green;
-    -webkit-text-fill-color: #BBB;
-    -webkit-box-shadow: 0 0 0px 1000px #333 inset;
-    transition: background-color 5000s ease-in-out 0s;
-  }
-
-
-  
-  input[type="text"]:focus:hover {
-    border-bottom: 1px solid #BBB;
-  }
-  
+@media  screen and (min-width: 1024px){
   input[type="text"]:focus {
-    width: 300px;
-    z-index: 1;
-    border-bottom: 1px solid #BBB;
-    cursor: text;
-  }
-  input[type="text"] {
-    height: 40px;
-    font-size: 20px;
-  
-  
-  }
-  
-  input[type="submit"]:hover {
-    opacity: 0.8;
-  }
 
-button{
-    margin-top:10px;
+  width:550px;
 }
-
-
-@media only screen and (min-width: 768px) and (max-width: 991px){ 
- 
- 
-/*  */
-input:-webkit-autofill,
-input:-webkit-autofill:hover, 
-input:-webkit-autofill:focus
-textarea:-webkit-autofill,
-textarea:-webkit-autofill:hover
-textarea:-webkit-autofill:focus,
-select:-webkit-autofill,
-select:-webkit-autofill:hover,
-select:-webkit-autofill:focus {
-border: 1px solid green;
--webkit-text-fill-color: #BBB;
--webkit-box-shadow: 0 0 0px 1000px #333 inset;
-transition: background-color 5000s ease-in-out 0s;
 }
-
-
-
-input[type="text"]:focus:hover {
-border-bottom: 1px solid #BBB;
-}
-
-input[type="text"]:focus {
-width: 870px;
-z-index: 1;
-border-bottom: 1px solid #BBB;
-cursor: text;
-}
-input[type="text"] {
-height: 40px;
-font-size: 20px;
-
-
-}
-
-input[type="submit"]:hover {
-opacity: 0.8;
-}
-
-button{
-margin-top:10px;
-}
-
-}
-
-/* .form-wrapper{
-display: flex;
-justify-content: center;
-align-items: center;
-background-color:rgba(53, 54, 44, 0.5);
-width:100%;
-height:40px;
-
-}
-.form-wrapper > input{
-    width:150px;
-    height:30px;
-}
-
-@media only screen and (min-width: 320px) and (max-width: 479px){ 
-
-    .form-wrapper > input{
-        width:100px;
-        height:20px;
-        font-size: 1rem;
-    }
-    .form-wrapper .btn{
-        width:10px;
-        height:18px;
-        font-size: .7rem;
-        
-    
-    }
-  
-    .form-wrapper .btn i{
-    
-        margin-right: 35px;
-        font-size: 20px;
-        height: 30px;
-        vertical-align: top;
-        margin-top:-5px;
-        color:green;
-    }
-}
-
-@media only screen and (min-width: 480px) and (max-width: 767px){ 
-    .form-wrapper > input{
-        width:150px;
-        height:30px;
-        font-size: 2rem;
-    }
-
-} 
-
-
-
-
-@media only screen and (min-width: 768px) and (max-width: 991px){ 
-    .form-wrapper .btn{
-        font-size: 2.1rem;
-    }
-    .form-wrapper{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color:rgba(53, 54, 44, 0.5);
-        width:100%;
-        height:60px;
-        
-        }
-        .form-wrapper > input{
-            width:170px;
-            height:60px;
-        }
-} */
-
-
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .form-wrapper{
-display: flex;
-justify-content: center;
-align-items: center;
-background-color:rgba(53, 54, 44, 0.5);
-width:100%;
-height:40px;
-
-}
-.form-wrapper > input{
-    width:150px;
-    height:30px;
-}
-
-@media only screen and (min-width: 320px) and (max-width: 479px){ 
-
-    .form-wrapper > input{
-        width:100px;
-        height:20px;
-        font-size: 1rem;
-    }
-    .form-wrapper .btn{
-        width:10px;
-        height:18px;
-        font-size: .7rem;
-        
-    
-    }
-  
-    .form-wrapper .btn i{
-    
-        margin-right: 35px;
-        font-size: 20px;
-        height: 30px;
-        vertical-align: top;
-        margin-top:-5px;
-        color:green;
-    }
-}
-
-@media only screen and (min-width: 480px) and (max-width: 767px){ 
-    .form-wrapper > input{
-        width:150px;
-        height:30px;
-        font-size: 2rem;
-    }
-
-} 
-
-
-
-
-@media only screen and (min-width: 768px) and (max-width: 991px){ 
-    .form-wrapper .btn{
-        font-size: 2.1rem;
-    }
-    .form-wrapper{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color:rgba(53, 54, 44, 0.5);
-        width:100%;
-        height:60px;
-        
-        }
-        .form-wrapper > input{
-            width:170px;
-            height:60px;
-        }
-} */

@@ -1,130 +1,71 @@
 .logoAboutUs img{
+  
+    padding: 0;
+    width:100px;
+    height:200px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 10%;
-    margin-top:10px;
-    height:5%;
+    margin: 0 auto;
+    padding-top:1rem;
 }
 .Aboutus-content{
-    margin-top:100px;
+    margin-top:60px;
 }
 .Aboutus-content h1{
-color:white;
+    color:white;
+    font-size:1.6rem;
     text-align: center;
+    margin:2rem;
+    
 }
 .Aboutus-content hr{
     
-        width:30%;
-        background-color: white;
+    display: block;
+    margin:0 auto;
+    width:50%;
+    background-color:lightgray;
+    height: 1px;
+    border: none;
+ 
+
+
+
+
 }
 .Aboutus-content p{
-    color: white;
-    margin-top:55px;
-    text-align: center;
     font-style: italic;
-    font-size: 3rem;
+    text-align: center;
+    font-weight: normal;
+    margin:35px 10px 10px 10px;
+    font-size:1.2rem;
+    color: white;
+    
+
 }
-@media only screen and (min-width: 320px) and (max-width: 479px){ 
-    .logoAboutUs img{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 30%;
-        margin-top:10px;
-    }
-    .Aboutus-content h1{
-        color:white;
-        font-size:2rem;
-            text-align: center;
-        }
-    .Aboutus-content{
-        margin-top:60px;
-    }
-    .Aboutus-content p{
-        margin-top:30px;
-        text-align: center;
-        font-style: italic;
-        font-size:1.3rem;
-    }
+@media  screen and (min-width: 800px){
+ 
+
+.Aboutus-content hr{
+    margin-left:20rem;
+    width:25%;
+}
+.Aboutus-content p{
+font-size: 1.5rem;
+}
 }
 
-@media only screen and (min-width: 480px) and (max-width: 767px){ 
-    .logoAboutUs img{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 30%;
-        margin-top:10px;
-    }
-    .Aboutus-content{
-        margin-top:100px;
-    }
-    .Aboutus-content h1{
-    font-size:4rem;
-        text-align: center;
-    }
+@media screen and (min-width:900px){
+
+.Aboutus-content hr{
+    margin-left:22rem;
+    width:25%;
+}
+
+
+}
+@media screen and (min-width:1024px){
     .Aboutus-content hr{
-        width:50%;
+        margin-left:32rem;
+    
     }
-    .Aboutus-content p{
-        font-size:4rem;
-        margin-top:55px;
-      
-    }
-  
-}
-@media only screen and (min-width: 768px) and (max-width: 991px){ 
-    .logoAboutUs img{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 30%;
-        margin-top:10px;
-       
-       }
-       .Aboutus-content{
-           margin-top:100px;
-       }
-       .Aboutus-content h1{
-       font-size:3rem;
-           text-align: center;
-       }
-       .Aboutus-content hr{
-           width:50%;
-       }
-       .Aboutus-content p{
-           font-size:2.5rem;
-           margin-top:55px;
-           text-align: center;
-           font-style: italic;
-       }
-}
-@media only screen and (min-width: 992px) and (max-width: 1024px){ 
-    .logoAboutUs img{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 30%;
-        margin-top:25px;
-        height: 5%;
-       
-       }
-       .Aboutus-content{
-           margin-top:100px;
-       }
-       .Aboutus-content h1{
-       font-size:3rem;
-           text-align: center;
-       }
-       .Aboutus-content hr{
-           width:50%;
-       }
-       .Aboutus-content p{
-           font-size:2.5rem;
-           margin-top:55px;
-           text-align: center;
-           font-style: italic;
-       }
 
 }
