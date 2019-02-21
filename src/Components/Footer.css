@@ -19,9 +19,10 @@ padding:0;
     color:white;
 }
 .social-icon{
-margin:.6em;
+margin:.1em;
     color:white;
     padding-left:2rem;
+    padding-top:.5rem;
 }
 
 @media screen and (min-width:800px){

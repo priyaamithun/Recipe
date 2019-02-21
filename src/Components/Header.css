@@ -6,14 +6,14 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position:center ;
-    height:500px;
+    height:280px;
 }
 
 
 .logo img{
     padding: 0;
-    width:200px;
-    height:400px;
+    width:100px;
+    height:200px;
     display: block;
     margin: 0 auto;
     padding-top:7rem;
@@ -31,9 +31,20 @@ font-size: .9rem;
 
 @media screen and (min-width:800px){
 
+    .Header{
+        height:450px;
+    }
     .Header h5{
         text-align: center;
         font-size: 1.4rem;
+    }
+    .logo img{
+        width:200px;
+        height:300px;
+        display: block;
+        margin: 0 auto;
+        padding-top:7rem;
+        
     }
 
 }
